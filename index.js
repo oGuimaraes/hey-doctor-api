@@ -6,10 +6,11 @@ const server = express();
 // Route params = /users/1
 // Request body = { }
 
-server.get("/users/:id", (req, res) => {
-  const nome = req.query.nome;
-  const { id } = req.params;
-  return res.json({ message: `Hello ${nome}`, id: id });
+const users = ["Otávio", "Cleiton", "Rasta", "Cabeça", "Gelo"];
+
+server.get("/users/:index", (req, res) => {
+  const { index } = req.params;
+  return res.json(users[index]);
 });
-z;
+
 server.listen(3000);
