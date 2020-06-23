@@ -1,7 +1,7 @@
 
  # 🏥 HeyDoctor API
 
-Back-end made with Express.js
+Back-end made with Node and Express.js
 
 ## Features
 This back-end features the latest tools and practices in web development!
