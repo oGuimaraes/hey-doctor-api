@@ -22,4 +22,4 @@ class Appointment extends Model {
   }
 }
 
-export default File;
+export default Appointment;
