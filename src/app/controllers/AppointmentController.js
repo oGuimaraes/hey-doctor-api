@@ -6,11 +6,15 @@ import File from '../models/File';
 import Appointment from '../models/Appointment';
 
 class AppointmentController {
+  /* Scheduling the logged-in user and paggination */
   async index(req, res) {
+    const { page = 1 } = req.query;
     const appointments = await Appointment.findAll({
       where: { user_id: req.userId, canceled_at: null },
       order: ['date'],
       attributes: ['id', 'date'],
+      limit: 10,
+      offset: (page - 1) * 10,
       include: [
         {
           model: User,
