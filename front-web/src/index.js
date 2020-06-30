@@ -1,3 +1,5 @@
-const a = (a, b) => a + b;
+import React from "react";
+import { render } from "react-dom";
+import App from "./App";
 
-alert(a(3, 12));
+render(<App />, document.getElementById("app"));
