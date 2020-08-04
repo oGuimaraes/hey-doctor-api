@@ -3,16 +3,16 @@ import { darken } from 'polished';
 
 export const Wrapper = styled.div`
   height: 100%;
-  background: #2980b9; /* fallback for old browsers */
+  background: #56ccf2; /* fallback for old browsers */
   background: -webkit-linear-gradient(
     to right,
-    #6584a2,
-    #2980b9
+    #2f80ed,
+    #56ccf2
   ); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(
     to right,
-    #6584a2,
-    #2980b9
+    #2f80ed,
+    #56ccf2
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
   display: flex;
@@ -48,6 +48,13 @@ export const Content = styled.div`
     &::placeholder {
       color: rgba(255, 255, 255, 0.8);
     }
+  }
+
+  span {
+    color: #ff9494;
+    align-self: flex-start;
+    margin: 0 0 10px;
+    font-size: 12px;
   }
 
   button {
