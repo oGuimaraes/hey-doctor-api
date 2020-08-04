@@ -7,5 +7,3 @@ if (process.env.NODE_ENV === 'development') {
 
   console.tron = tron;
 }
-
-export default Reactotron;
