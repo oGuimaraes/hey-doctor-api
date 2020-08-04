@@ -10,10 +10,10 @@ import Profile from '../pages/Profile';
 export default function Routes() {
   return (
     <Switch>
-      <Routh path="/" exact component={SignIn} />
-      <Routh path="/register" component={SignUp} />
-      <Routh path="/dashboard" component={Dashboard} />
-      <Routh path="/profile" component={Profile} />
+      <Route path="/" exact component={SignIn} />
+      <Route path="/register" component={SignUp} />
+      <Route path="/dashboard" component={Dashboard} />
+      <Route path="/profile" component={Profile} />
     </Switch>
   );
 }
