@@ -1,23 +1,29 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
+import { Form, Input } from '@rocketseat/unform';
 
 import logo from '~/assets/logo.svg';
 
-export default class SignUp extends Component {
-  render() {
-    return (
-      <>
-        <img src={logo} alt="HeyDoctor" />
-
-        <form>
-          <input type="text" placeholder="Nome Completo" />
-          <input type="email" placeholder="Seu e-mail" />
-          <input type="password" placeholder="Sua senha secreta" />
-
-          <button type="submit">Criar Conta</button>
-          <Link to="/">Já tenho login</Link>
-        </form>
-      </>
-    );
+export default function SignUp() {
+  function handleSubmit(data) {
+    console.tron.log(data);
   }
+  return (
+    <>
+      <img src={logo} alt="HeyDoctor" />
+
+      <Form onSubmit={handleSubmit}>
+        <Input name="username" type="text" placeholder="Nome Completo" />
+        <Input name="email" type="email" placeholder="Seu e-mail" />
+        <Input
+          name="password"
+          type="password"
+          placeholder="Sua senha secreta"
+        />
+
+        <button type="submit">Criar Conta</button>
+        <Link to="/">Já tenho login</Link>
+      </Form>
+    </>
+  );
 }
