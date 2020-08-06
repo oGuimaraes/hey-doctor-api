@@ -3,17 +3,17 @@ import { darken } from 'polished';
 
 export const Wrapper = styled.div`
   height: 100%;
-  background: #56ccf2; /* fallback for old browsers */
+  background: #56ccf2;
   background: -webkit-linear-gradient(
     to right,
     #2f80ed,
     #56ccf2
-  ); /* Chrome 10-25, Safari 5.1-6 */
+  );
   background: linear-gradient(
     to right,
     #2f80ed,
     #56ccf2
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  );
 
   display: flex;
   justify-content: center;
