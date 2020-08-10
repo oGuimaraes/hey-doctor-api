@@ -32,7 +32,7 @@ export const Content = styled.div`
   }
 
   aside {
-    display: block;
+    display: flex;
     align-items: center;
   }
 `;
