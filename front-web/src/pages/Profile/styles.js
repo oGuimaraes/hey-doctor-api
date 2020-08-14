@@ -41,12 +41,12 @@ export const Container = styled.div`
 
     button {
       margin: 5px 0 0;
-      height: 32px;
+      height: 36px;
       background: #0c0c0ca1;
       font-weight: bold;
       border: 0;
       border-radius: 4px;
-      font-size: 14px;
+      font-size: 13px;
       color: #fff;
       transition: background 0.2s;
 
@@ -58,12 +58,12 @@ export const Container = styled.div`
   > button {
     margin: 10px 0 0;
     width: 100%;
-    height: 32px;
+    height: 36px;
     background: #f53d6ac4;
     font-weight: bold;
     border: 0;
     border-radius: 4px;
-    font-size: 14px;
+    font-size: 13px;
     color: #fff;
     transition: background 0.2s;
 
