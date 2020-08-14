@@ -1,26 +1,10 @@
-import styled from 'styled-components';
 import { darken } from 'polished';
 
-export const Wrapper = styled.div`
-  height: 100%;
-  background: #56ccf2;
-  background: -webkit-linear-gradient(to right, #2f80ed, #56ccf2);
-  background: linear-gradient(to right, #2f80ed, #56ccf2);
+import styled from 'styled-components';
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-`;
-
-export const Content = styled.div`
-  width: 100%;
-  max-width: 315px;
-  text-align: center;
-
-  img {
-    color: #fff;
-    width: 120px;
-  }
+export const Container = styled.div`
+  max-width: 600px;
+  margin: 50px auto;
 
   form {
     display: flex;
@@ -48,6 +32,13 @@ export const Content = styled.div`
       font-size: 12px;
     }
 
+    hr {
+      border: 0;
+      height: 1px;
+      background-color: rgba(255, 255, 255, 0.2);
+      margin: 10px 0 20px;
+    }
+
     button {
       margin: 5px 0 0;
       height: 32px;
@@ -64,15 +55,21 @@ export const Content = styled.div`
       }
     }
   }
-
-  a {
+  > button {
+    margin: 10px 0 0;
+    width: 100%;
+    height: 32px;
+    background: #f53d6ac4;
+    font-weight: bold;
+    border: 0;
+    border-radius: 4px;
+    font-size: 14px;
     color: #fff;
-    margin-top: 15px;
-    font-size: 13px;
-    opacity: 0.8;
+    transition: background 0.2s;
 
     &:hover {
-      opacity: 1;
+      background: ${darken(0.04, '#f53d6ac4')};
+      transition: background 0.5s;
     }
   }
 `;
